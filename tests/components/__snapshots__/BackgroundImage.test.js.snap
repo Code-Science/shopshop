@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundImage Component snapshot test 1`] = `
+<div
+  className="backgroundImage"
+>
+  <Image
+    alt="home banner"
+    layout="fill"
+    objectFit="cover"
+    src="/images/backimg.jpg"
+  />
+  <div
+    className="shade"
+  >
+    <p
+      className="text"
+    >
+      Discover Yourself
+       
+      <Link
+        href="/collection/women/accessories"
+      >
+        <a
+          className="shopBtn"
+        >
+          <br />
+          Accessories
+        </a>
+      </Link>
+    </p>
+  </div>
+</div>
+`;

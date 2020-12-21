@@ -1,0 +1,98 @@
+.header {
+  position: relative;
+  width: 100%;
+  z-index: 5000;
+  font-size: 1.3rem;
+}
+
+.auth {
+  width: 100vw;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 0rem;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.items {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.items:not(last-child) {
+  margin-right: 2.5rem;
+  font-weight: inherit;
+}
+
+button.items {
+  transform: translateY(1px);
+}
+
+.mainHead {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  position: relative;
+  background-color: white;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.cart {
+  position: relative;
+}
+
+.cartCount {
+  background-color: rgb(242, 16, 90);
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  border-radius: 50%;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.nav {
+  display: flex;
+  width: min-content;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 480px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .auth {
+    padding: 5px 3rem;
+  }
+  .mainHead {
+    padding: 1rem 5rem;
+  }
+  .menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .auth {
+    padding: 5px 13rem;
+  }
+  .mainHead {
+    padding: 1rem 15rem;
+  }
+}

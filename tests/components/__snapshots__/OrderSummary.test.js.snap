@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Order Summary Component snapshot test 1`] = `
+<div
+  className="orderSummary"
+>
+  <div
+    className="divider"
+  />
+  <div>
+    <h1
+      className="orderSummaryHeading"
+    >
+      Order Summary
+    </h1>
+    <div
+      className="orderSummaryDetails"
+    >
+      <h3>
+        Standard Delivery Charges
+      </h3>
+      <p>
+        £10.00 per 5kg
+      </p>
+      <hr />
+      <h3>
+        Today's charge: £
+        NaN
+      </h3>
+    </div>
+  </div>
+</div>
+`;

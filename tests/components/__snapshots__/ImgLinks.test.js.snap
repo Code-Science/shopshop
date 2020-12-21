@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImgLinks Component snapshot test 1`] = `
+<div
+  className="bottomCollection"
+>
+  <Link
+    href="/collection/women/clothes"
+  >
+    <a
+      className="image"
+    >
+      jhghjgj
+      <Image
+        alt="home banner"
+        layout="fill"
+        objectFit="cover"
+        src="/images/bottomPic1.jpg"
+      />
+    </a>
+  </Link>
+  <Link
+    href="/collection/women/accessories"
+  >
+    <a
+      className="image"
+    >
+      jhghjgj
+      <Image
+        alt="home banner"
+        layout="fill"
+        objectFit="cover"
+        src="/images/bottomPic2.jpg"
+      />
+    </a>
+  </Link>
+  <Link
+    href="/collection/men/clothes"
+  >
+    <a
+      className="image"
+    >
+      jhghjgj
+      <Image
+        alt="home banner"
+        layout="fill"
+        objectFit="cover"
+        src="/images/bottomPic3.jpg"
+      />
+    </a>
+  </Link>
+  <Link
+    href="/collection/women/accessories"
+  >
+    <a
+      className="image"
+    >
+      jhghjgj
+      <Image
+        alt="home banner"
+        layout="fill"
+        objectFit="cover"
+        src="/images/bottomPic4.jpg"
+      />
+    </a>
+  </Link>
+  <Link
+    href="/collection/kids/clothes"
+  >
+    <a
+      className="image"
+    >
+      jhghjgj
+      <Image
+        alt="home banner"
+        layout="fill"
+        objectFit="cover"
+        src="/images/bottomPic5.jpg"
+      />
+    </a>
+  </Link>
+</div>
+`;

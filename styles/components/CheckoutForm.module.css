@@ -1,0 +1,102 @@
+.StripeElement--webkit-autofill {
+  background: transparent !important;
+}
+
+.checkout {
+  background-color: rgb(172, 172, 172);
+  color: rgb(172, 172, 172);
+  min-height: 110vh;
+}
+
+.StripeElement {
+  width: 100%;
+  padding: 6px 11px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  height: 32px;
+}
+
+.stripeForm {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 4vh;
+  color: rgb(104, 103, 103);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.input * input {
+  background-color: rgba(238, 238, 238, 0.973);
+}
+
+.input {
+  margin-bottom: 2rem !important;
+}
+
+.checkoutBtn {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  font-size: 1.4rem;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.checkoutBtn:disabled {
+  background-color: gray;
+  cursor: default;
+}
+
+.divider {
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 0px;
+}
+
+.orderSummary {
+  margin-top: 5rem;
+  background-color: rgba(218, 216, 216, 0.288);
+}
+
+.orderSummaryHeading {
+  text-align: center;
+  font-size: 1.6rem;
+}
+.orderSummaryDetails {
+  font-size: 1.2rem;
+  padding: 2rem 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 500px) {
+  .stripeForm {
+    padding: 40px 100px;
+  }
+}
+@media (min-width: 700px) {
+  .stripeForm {
+    width: 70%;
+    margin: 4vh auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .stripeForm {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .stripeForm {
+    width: 40%;
+  }
+}

@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component snapshot test 1`] = `
+<div
+  className="container"
+>
+  <Head>
+    <title>
+      ShopShop
+    </title>
+    <link
+      href="/favicon.ico"
+      rel="icon"
+    />
+  </Head>
+  <header
+    className="headerBox"
+  >
+    <Header />
+    <HomeBanner />
+  </header>
+  <main
+    className="main"
+  >
+    <h1
+      className="heading"
+    >
+      Featured Products
+    </h1>
+    <Products
+      data={
+        Array [
+          Object {
+            "category_id": 4,
+            "id": 22,
+            "image1": "https://images-na.ssl-images-amazon.com/images/I/71iZLvsksPL._AC_SX679_.jpg",
+            "image2": "https://images-na.ssl-images-amazon.com/images/I/71dVI6zFlGL._AC_SX679_.jpg",
+            "image3": "https://images-na.ssl-images-amazon.com/images/I/71ygqTJYo9L._AC_SX679_.jpg",
+            "price": 20.09,
+            "product_name": "Ladies Purse, Women's Wallet",
+          },
+        ]
+      }
+    />
+    <div
+      className="background"
+    >
+      <p
+        className="text"
+      >
+        Discover Yourself
+         
+        <Link
+          href="/collection/women/accessories"
+        >
+          <a
+            className="shopBtn"
+          >
+            <br />
+            Accessories
+          </a>
+        </Link>
+      </p>
+    </div>
+    <BackgroundImage />
+    <ImgLinks />
+  </main>
+  <footer
+    className="footer"
+  >
+    <Footer />
+  </footer>
+</div>
+`;

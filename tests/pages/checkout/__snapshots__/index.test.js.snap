@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckoutPage Component snapshot test 1`] = `
+<div
+  className="checkout"
+>
+  checkout
+  <div
+    className="stripeForm"
+  >
+    <h1
+      className="orderSummaryHeading"
+    >
+      CHECKOUT
+    </h1>
+    <Elements
+      stripe={Promise {}}
+    >
+      <CheckoutForm />
+    </Elements>
+    <OrderSummary />
+  </div>
+</div>
+`;

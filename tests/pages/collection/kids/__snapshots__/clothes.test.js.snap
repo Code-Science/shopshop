@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Kidswear Component snapshot test 1`] = `
+<div
+  className="container"
+>
+  <Head>
+    <title>
+      ShopShop
+    </title>
+    <meta
+      content="Learn how to build a personal website using Next.js"
+      name="description"
+    />
+    <link
+      href="/favicon.ico"
+      rel="icon"
+    />
+  </Head>
+  <header>
+    <Header />
+  </header>
+  <main
+    className="main"
+  >
+    <div
+      className="figure"
+    >
+      <Image
+        alt="home banner"
+        layout="fill"
+        objectFit="cover"
+        src="/images/kidswear.jpg"
+      />
+    </div>
+    <h1
+      className="heading"
+    >
+      Kidswear
+    </h1>
+    <Products
+      data={
+        Array [
+          Object {
+            "category_id": 4,
+            "id": 22,
+            "image1": "https://images-na.ssl-images-amazon.com/images/I/71iZLvsksPL._AC_SX679_.jpg",
+            "image2": "https://images-na.ssl-images-amazon.com/images/I/71dVI6zFlGL._AC_SX679_.jpg",
+            "image3": "https://images-na.ssl-images-amazon.com/images/I/71ygqTJYo9L._AC_SX679_.jpg",
+            "price": 20.09,
+            "product_name": "Ladies Purse, Women's Wallet",
+          },
+        ]
+      }
+    />
+  </main>
+  <footer
+    className="footer"
+  >
+    <Footer />
+  </footer>
+</div>
+`;

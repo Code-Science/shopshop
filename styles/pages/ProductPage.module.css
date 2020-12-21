@@ -1,0 +1,133 @@
+.productPage {
+  text-align: center;
+  padding-top: 2rem;
+}
+.productPageFigure {
+  position: relative;
+  height: 50vh;
+  width: 90vw;
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+.productPageImg {
+  height: 50vh;
+  width: 90%;
+  object-fit: contain;
+  /* margin-top: -8rem; */
+}
+
+.productPageHeading {
+  color: rgb(82, 82, 82);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: 400;
+  margin-bottom: -1rem;
+  padding: 0rem 5rem;
+}
+
+.productPageDetails {
+  background-color: rgba(241, 241, 241, 0.678);
+  margin: 3rem 2rem;
+  padding: 3rem 1rem;
+  font-size: 1.9rem;
+}
+
+.BtnMargin {
+  margin-top: 1.5rem;
+}
+
+.productPageNav {
+  color: rgb(77, 77, 77);
+  display: flex;
+  padding: 2rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  width: 70%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cartMessage {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 5vh;
+  background-color: rgba(248, 3, 85, 0.904);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-weight: bold;
+  visibility: hidden;
+  transform: translateY(100%);
+}
+.animate {
+  animation-name: addToCart;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.stopAnimation {
+  animation: none;
+}
+
+@keyframes addToCart {
+  0% {
+    visibility: hidden;
+    transform: translateY(100%);
+  }
+  0.1% {
+    visibility: visible;
+    transform: translateY(100%);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  85% {
+    visibility: visible;
+    transform: translateY(0);
+  }
+  99.9% {
+    visibility: visible;
+    transform: translateY(100%);
+  }
+  100% {
+    visibility: hidden;
+    transform: translateY(100%);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .productPage {
+    margin-top: 101px;
+    padding-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .productPageNav {
+    width: 50%;
+    margin-left: 10rem;
+  }
+  .productPageFigure {
+    margin-top: 1rem;
+    position: relative;
+    height: 50vh;
+    width: 50vw;
+    box-shadow: none;
+  }
+  .productPageHeading {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .productPageNav {
+    width: 30%;
+  }
+}

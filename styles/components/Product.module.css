@@ -1,0 +1,104 @@
+.product {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.figure {
+  width: 100%;
+  height: 60%;
+  position: relative;
+}
+.img:hover {
+  animation: fadeInFadeOut 0.8s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.details {
+  height: 40%;
+  width: 100%;
+  text-align: center;
+  padding-top: 1.2rem;
+}
+
+.name {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+.price {
+  font-size: 1.3rem;
+}
+
+.productBtn {
+  display: inline-block;
+  color: black;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@keyframes fadeInFadeOut {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .product {
+    width: 90%;
+    height: 35vh;
+    margin: auto;
+  }
+  .figure {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .product {
+    width: 90%;
+    height: 45vh;
+    margin: auto;
+  }
+  .name {
+    font-size: 1.6rem;
+  }
+
+  .price {
+    font-size: 1.5rem;
+  }
+
+  .productBtn {
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product {
+    height: 55vh;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .product {
+    height: 60vh;
+  }
+}

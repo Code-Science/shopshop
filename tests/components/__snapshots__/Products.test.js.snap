@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Products Component snapshot test 1`] = `
+<div
+  className="products"
+>
+  <Product
+    item={
+      Object {
+        "id": 4,
+        "image1": "image1",
+        "image2": "image2",
+        "price": 80,
+        "product_name": "shirt",
+      }
+    }
+    key="4"
+  />
+  <Product
+    item={
+      Object {
+        "id": 4,
+        "image1": "image1",
+        "image2": "image2",
+        "price": 80,
+        "product_name": "shirt",
+      }
+    }
+    key="4"
+  />
+</div>
+`;

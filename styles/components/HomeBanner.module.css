@@ -1,0 +1,145 @@
+.homeBanner {
+  width: 100vw;
+  height: 87vh;
+  position: relative;
+  background-color: white;
+}
+
+.images,
+.textBox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.image,
+.shade,
+.text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image {
+  opacity: 0;
+  animation: imageAnimation 50s linear infinite;
+  animation-fill-mode: forwards;
+}
+.image:nth-child(5) {
+  animation: lastImageAnimation 50s linear infinite;
+  animation-fill-mode: forwards;
+}
+
+.shade {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+.text {
+  top: 35%;
+  color: white;
+  font-size: 4rem;
+  font-weight: 300;
+  padding: 0rem 3rem;
+  line-height: 4.5rem;
+  opacity: 0;
+  animation: textAnimation 50s linear infinite;
+}
+
+.shopBtn {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.image:nth-child(1),
+.text:nth-child(1) {
+  animation-delay: 0s;
+}
+.image:nth-child(2),
+.text:nth-child(2) {
+  animation-delay: 10s;
+}
+.image:nth-child(3),
+.text:nth-child(3) {
+  animation-delay: 20s;
+}
+.image:nth-child(4),
+.text:nth-child(4) {
+  animation-delay: 30s;
+}
+.image:nth-child(5),
+.text:nth-child(5) {
+  animation-delay: 40s;
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  2% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  18% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+@keyframes lastImageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  2% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  18% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  3% {
+    transform: translateY(0%);
+
+    opacity: 1;
+  }
+  18% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .homeBanner {
+    margin-top: 101px;
+    height: 70vh;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .text {
+    margin-left: 12rem;
+  }
+}

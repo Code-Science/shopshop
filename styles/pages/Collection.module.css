@@ -1,0 +1,33 @@
+.figure {
+  position: relative;
+  height: 40vh;
+  width: 100vw;
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+  color: rgb(82, 82, 82);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 3.5rem;
+  font-weight: 400;
+  margin-bottom: -1rem;
+  padding: 0rem 5rem;
+}
+
+@media screen and (min-width: 480px) {
+  .figure {
+    margin-top: 101px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .figure {
+    height: 50vh;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .figure {
+    height: 60vh;
+  }
+}

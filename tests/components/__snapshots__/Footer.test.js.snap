@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Component snapshot test 1`] = `
+<Fragment>
+  <div
+    className="footer"
+  >
+    <div
+      className="section"
+    >
+      <p
+        className="footerHeading"
+      >
+        Customer Care
+      </p>
+      <ul>
+        <li>
+          <Link
+            href="/"
+          >
+            <a
+              className="navigation"
+            >
+              CONTACT US
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/"
+          >
+            <a
+              className="navigation"
+            >
+              STORE LOCATION
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/"
+          >
+            <a
+              className="navigation"
+            >
+              CAREERS
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/"
+          >
+            <a
+              className="navigation"
+            >
+              TERMS OF USE
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/"
+          >
+            <a
+              className="navigation"
+            >
+              RETURNS
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/"
+          >
+            <a
+              className="navigation"
+            >
+              PRIVACY POLICY
+            </a>
+          </Link>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="section"
+    >
+      <p
+        className="footerHeading"
+      >
+        About
+      </p>
+      <div
+        className="about"
+      >
+        <p
+          className="name"
+        >
+          Shopshop
+        </p>
+        <p>
+          Curators of ethical fashion and New shopshop designed.
+        </p>
+        <p>
+          Shopshop is a destination for style seekers. Located in xyzton's boutique xyz Village, shopshop is lovingly and carefully lorem lorem lorem . Dedicated to stylish designed, ethical fashion and accessories- shopshop lorem lorem is a beautiful style edit.
+        </p>
+      </div>
+    </div>
+    <div
+      className="section"
+    >
+      <p
+        className="footerHeading"
+      >
+        Newsletter
+      </p>
+      <p
+        className="newsletter"
+      >
+        Join our mailing list
+      </p>
+      <form
+        className="form"
+      >
+        <input
+          className="input"
+          placeholder="your@email.com"
+          type="text"
+        />
+        <button
+          className="subscribeBtn"
+          type="button"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+  <div
+    className="bottom"
+  >
+    <div
+      className="icons"
+    >
+      <FacebookIcon
+        style={
+          Object {
+            "fontSize": 30,
+          }
+        }
+      />
+      <TwitterIcon
+        style={
+          Object {
+            "fontSize": 30,
+          }
+        }
+      />
+      <InstagramIcon
+        style={
+          Object {
+            "fontSize": 30,
+          }
+        }
+      />
+    </div>
+    <div
+      className="copyright"
+    >
+      Copyright © Shopshop 2020
+    </div>
+  </div>
+</Fragment>
+`;

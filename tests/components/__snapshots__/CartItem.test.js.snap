@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartItem Component snapshot test 1`] = `
+<li
+  className="cartItem"
+>
+  <div
+    className="details"
+  >
+    <div
+      className="imgBox"
+    >
+      <img
+        className="img"
+      />
+    </div>
+    <div
+      className="title"
+    >
+      <p />
+      <p>
+         color: blue
+      </p>
+    </div>
+  </div>
+  <div
+    className="priceDetails"
+  >
+    <div>
+      <p
+        className="small"
+      >
+        Price
+      </p>
+      <p>
+        $
+      </p>
+    </div>
+    <div>
+      <p
+        className="small"
+      >
+        Quantity
+      </p>
+      <div
+        className="btns"
+      >
+        <button
+          className="minus"
+          onClick={[Function]}
+          type="button"
+        >
+          -
+        </button>
+        <p />
+        <button
+          className="plus"
+          onClick={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </div>
+    </div>
+    <div>
+      <p
+        className="small"
+      >
+        Total
+      </p>
+      <p>
+        $
+        NaN
+      </p>
+    </div>
+  </div>
+</li>
+`;

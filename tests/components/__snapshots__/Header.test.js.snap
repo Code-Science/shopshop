@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component snapshot test 1`] = `
+<div
+  className="header"
+>
+  <div
+    className="auth"
+  >
+    <button
+      className="items"
+      onClick={[Function]}
+      type="button"
+    >
+      Sign In
+    </button>
+  </div>
+  <div
+    className="mainHead"
+  >
+    <div
+      className="menu"
+      onClick={[Function]}
+    >
+      <MenuIcon
+        style={
+          Object {
+            "fontSize": 30,
+          }
+        }
+      />
+    </div>
+    <div>
+      <Link
+        href="/"
+      >
+        <a
+          className="logo"
+        >
+          ShopShop
+        </a>
+      </Link>
+    </div>
+    <div
+      className="nav"
+    >
+      <Nav
+        open={false}
+      />
+      <div
+        className="cart"
+        onClick={[Function]}
+      >
+        <ShoppingCartOutlinedIcon
+          style={
+            Object {
+              "fontSize": 30,
+            }
+          }
+        />
+        <p
+          className="cartCount"
+        >
+          NaN
+        </p>
+      </div>
+    </div>
+  </div>
+  <Cart
+    close={[Function]}
+    show={false}
+  />
+  <Backdrop
+    click={[Function]}
+    show={false}
+  />
+</div>
+`;

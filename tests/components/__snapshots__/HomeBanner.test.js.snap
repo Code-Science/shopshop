@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeBanner Component snapshot test 1`] = `
+<div
+  className="homeBanner"
+>
+  <ul
+    className="images"
+  >
+    <li
+      className="image"
+    >
+      <Image
+        alt="home banner"
+        layout="fill"
+        objectFit="cover"
+        src="/images/homebanner1.jpeg"
+      />
+    </li>
+    <li
+      className="image"
+    >
+      <Image
+        alt="home banner"
+        layout="fill"
+        objectFit="cover"
+        src="/images/homebanner2.jpg"
+      />
+    </li>
+    <li
+      className="image"
+    >
+      <Image
+        alt="home banner"
+        layout="fill"
+        objectFit="cover"
+        src="/images/homebanner3.jpg"
+      />
+    </li>
+    <li
+      className="image"
+    >
+      <Image
+        alt="home banner"
+        layout="fill"
+        objectFit="cover"
+        src="/images/homebanner4.jpg"
+      />
+    </li>
+    <li
+      className="image"
+    >
+      <Image
+        alt="home banner"
+        layout="fill"
+        objectFit="cover"
+        src="/images/homebanner5.jpg"
+      />
+    </li>
+  </ul>
+  <div
+    className="shade"
+  >
+    <ul
+      className="textBox"
+    >
+      <li
+        className="text"
+      >
+        MODERN Fashion Craze
+         
+        <Link
+          href="/collection/women/accessories"
+        >
+          <a
+            className="shopBtn"
+          >
+            <br />
+            Shop now
+          </a>
+        </Link>
+      </li>
+      <li
+        className="text"
+      >
+        ELEGENT New Collection
+         
+        <Link
+          href="/collection/women/accessories"
+        >
+          <a
+            className="shopBtn"
+          >
+            <br />
+            Shop now
+          </a>
+        </Link>
+      </li>
+      <li
+        className="text"
+      >
+        WINTER New Season
+         
+        <Link
+          href="/collection/women/clothes"
+        >
+          <a
+            className="shopBtn"
+          >
+            <br />
+            Shop now
+          </a>
+        </Link>
+      </li>
+      <li
+        className="text"
+      >
+        MENSWEAR New Collection
+         
+        <Link
+          href="/collection/men/accessories"
+        >
+          <a
+            className="shopBtn"
+          >
+            <br />
+            Shop now
+          </a>
+        </Link>
+      </li>
+      <li
+        className="text"
+      >
+        Kids New Designs
+         
+        <Link
+          href="/collection/kids/clothes"
+        >
+          <a
+            className="shopBtn"
+          >
+            <br />
+            Shop now
+          </a>
+        </Link>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

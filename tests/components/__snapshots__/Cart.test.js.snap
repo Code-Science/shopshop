@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart Component snapshot test 1`] = `
+<div
+  className="cart show"
+>
+  <div
+    className="top"
+  >
+    <p>
+      Your Cart
+    </p>
+    <button
+      className="cartBtn"
+      type="button"
+    >
+      <CloseIcon
+        style={
+          Object {
+            "fontSize": 30,
+          }
+        }
+      />
+    </button>
+  </div>
+  <div
+    className="selection"
+  >
+    <ul
+      className="cartList"
+    >
+      <CartItem
+        id={4}
+        key="4"
+        price={80}
+      />
+    </ul>
+  </div>
+  <div
+    className="endSection"
+  >
+    <p>
+      Special instructions for seller
+    </p>
+    <textarea
+      className="textarea"
+    />
+    <p>
+      <span>
+        Subtotal : 
+      </span>
+      <strong
+        className="totalPrice"
+      >
+        £
+        NaN
+      </strong>
+    </p>
+  </div>
+  <div>
+    <Link
+      href="/checkout"
+    >
+      <a
+        className="checkoutBtn"
+      >
+        Check Out
+      </a>
+    </Link>
+  </div>
+</div>
+`;

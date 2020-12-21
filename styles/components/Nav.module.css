@@ -1,0 +1,164 @@
+.nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  height: 0;
+  width: 100vw;
+  color: rgb(107, 107, 107);
+  font-weight: 400;
+  overflow: hidden;
+  color: transparent;
+}
+.openNav {
+  animation: open;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.closeNav {
+  animation: close 0.2s linear forwards;
+}
+.navList {
+  margin-top: 1.5rem;
+}
+
+.navItem {
+  position: relative;
+  margin: 2rem 3rem;
+  padding-bottom: 2rem;
+  padding-left: 0.5rem;
+}
+
+.navItem:not(:last-child) {
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.navItem:last-child {
+  margin-bottom: 0rem;
+}
+
+.navPopup {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+  background-color: white;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.2s;
+  margin-top: 2rem;
+  display: none;
+}
+
+.popupItems {
+  border-top: 1px solid rgb(209, 209, 209);
+  margin-left: 2rem;
+  padding: 1rem 0.5rem;
+}
+
+.open {
+  display: flex;
+  height: 7.5rem;
+}
+.close {
+  display: none;
+  height: 0rem;
+}
+
+.navName {
+  cursor: pointer;
+}
+
+@keyframes open {
+  0% {
+    height: 0;
+    color: transparent;
+  }
+  99% {
+    height: 26rem;
+    color: rgb(107, 107, 107);
+  }
+  100% {
+    height: inherit;
+    color: rgb(107, 107, 107);
+  }
+}
+
+@keyframes close {
+  0% {
+    height: 26rem;
+    color: rgb(107, 107, 107);
+  }
+  100% {
+    height: 0;
+    color: transparent;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .menu {
+    display: none;
+  }
+  .nav {
+    position: relative;
+    height: inherit;
+    width: 80%;
+    color: rgb(75, 74, 74);
+    font-size: 1.4rem;
+    overflow: visible;
+    align-self: center;
+    margin-right: 2rem;
+  }
+  .navList {
+    margin-top: 0rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .openNav {
+    animation: none;
+  }
+  .closeNav {
+    animation: none;
+  }
+
+  .navItem {
+    margin: 0rem 2rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+  }
+
+  .navItem:not(:last-child) {
+    border-bottom: none;
+  }
+
+  .navItem:last-child {
+    margin-bottom: 0rem;
+  }
+
+  .navPopup {
+    position: absolute;
+    top: 115%;
+    left: -3.5rem;
+    z-index: 10888;
+    /* padding: 1.5rem 1rem; */
+    display: none;
+  }
+  .open {
+    display: flex;
+    height: inherit;
+  }
+  .close {
+    display: none;
+    height: 0rem;
+  }
+
+  .popupItems {
+    border-top: 1px solid rgb(209, 209, 209);
+    margin-left: 0rem;
+    padding: 1.5rem 3rem;
+  }
+  .popupItems:hover {
+    background-color: rgb(235, 235, 235);
+  }
+}

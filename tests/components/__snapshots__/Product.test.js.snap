@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product Component snapshot test 1`] = `
+<div
+  className="product"
+>
+  <figure
+    className="figure"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <img
+      alt="home banner"
+      className="img"
+      src="image1"
+    />
+  </figure>
+  <div
+    className="details"
+  >
+    <p
+      className="name"
+    >
+      shirt
+    </p>
+    <p
+      className="price"
+    >
+      £
+      80
+    </p>
+    <Link
+      href="/product/4"
+    >
+      <a
+        className="productBtn"
+      >
+        Details
+      </a>
+    </Link>
+  </div>
+</div>
+`;

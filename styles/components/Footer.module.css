@@ -1,0 +1,104 @@
+.footer {
+  width: 100vw;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  padding: 0rem 3rem;
+  padding-top: 3rem;
+  background-color: white;
+}
+
+.footerHeading {
+  font-size: 2rem;
+  border-bottom: 0.5px solid rgb(136, 136, 136);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.navigation {
+  display: inline-block;
+  padding: 1rem 0rem;
+  color: rgba(85, 85, 85);
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.about,
+.newsletter {
+  font-size: 1.7rem;
+  color: rgba(85, 85, 85);
+}
+
+.form {
+  background-color: rgba(243, 243, 243);
+  margin: 2rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  width: 100%;
+}
+.input {
+  padding: 1rem 2rem;
+}
+
+.input::placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.subscribeBtn {
+  background-color: black;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: rgb(228, 225, 225);
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin-top: -0.1rem;
+}
+
+.icons {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 0rem;
+}
+
+.copyright {
+  background-color: gray;
+  color: rgb(236, 236, 236);
+  width: 100vw;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1100px) {
+  .footer {
+    flex-direction: row;
+    font-size: 1.5rem;
+  }
+  .section {
+    width: 100%;
+    padding: 1rem 2em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .heading {
+    font-size: 3.5rem;
+    padding-top: 7rem;
+  }
+  .icons {
+    width: 15%;
+  }
+}

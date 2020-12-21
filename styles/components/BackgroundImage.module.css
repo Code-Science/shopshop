@@ -1,0 +1,45 @@
+.backgroundImage {
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+}
+
+.shade {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+.text {
+  color: rgba(248, 248, 248, 0.644);
+  align-self: center;
+  font-size: 3.5rem;
+  font-weight: 300;
+  padding: 0rem 3rem;
+  line-height: 3rem;
+}
+
+.shopBtn {
+  font-size: 2rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+  .backgroundImage {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
+  .shade {
+    display: none;
+  }
+}
