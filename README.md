@@ -4,17 +4,17 @@ This is an Ecommerce application built with next.js. Initialtized with create-ne
 
 ## Main Dependencies and Integrations
 
-Next.js , React --> Core Functionality ( All functions with hooks )
-Mysql, serverless-mysql --> Handle Relatinal Database
-Context Api --> useContext hook in combination with useReducer hook is used to manage state of the application
-CSS Modules --> Scoped css styling for Components
-Material UI --> For styled components
-Stripe --> For Processing Purchase
-NextAuth --> Authentication (Integrated with Facebook and Auth0)
-Splide --> For Image Slide Show
-Classnames --> Easily changing classes with conditions
-Prop-Types --> Type Checking
-jest and Enzyme --> For components testing (snapshot testing includes)
+Next.js , React --> Core Functionality ( All functions with hooks ) <br/>
+Mysql, serverless-mysql --> Handle Relatinal Database<br/>
+Context Api --> useContext hook in combination with useReducer hook is used to manage state of the application <br/>
+CSS Modules --> Scoped css styling for Components <br/>
+Material UI --> For styled components <br/>
+Stripe --> For Processing Purchase <br/>
+NextAuth --> Authentication (Integrated with Facebook and Auth0) <br/>
+Splide --> For Image Slide Show <br/>
+Classnames --> Easily changing classes with conditions <br/>
+Prop-Types --> Type Checking <br/>
+jest and Enzyme --> For components testing (snapshot testing includes) <br/>
 
 ## Main Routes Or Pages
 
