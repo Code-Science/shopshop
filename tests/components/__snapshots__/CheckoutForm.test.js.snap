@@ -65,7 +65,7 @@ exports[`CheckoutForm Component snapshot test 1`] = `
   <button
     className="checkoutBtn"
     disabled={true}
-    type="button"
+    type="submit"
   >
     <span>
       Buy Now

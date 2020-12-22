@@ -1,30 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Shopshop
 
-## Getting Started
+This is an Ecommerce application built with next.js. Initialtized with create-next-app, shopshop is an application where all the items are displayed, user is allowed to add item in a cart or remove it, and checkout with stripe.
 
-First, run the development server:
+## Main Dependencies and Integrations
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Next.js , React --> Core Functionality ( All functions with hooks )
+Mysql, serverless-mysql --> Handle Relatinal Database
+Context Api --> useContext hook in combination with useReducer hook is used to manage state of the application
+CSS Modules --> Scoped css styling for Components
+Material UI --> For styled components
+Stripe --> For Processing Purchase
+NextAuth --> Authentication (Integrated with Facebook and Auth0)
+Splide --> For Image Slide Show
+Classnames --> Easily changing classes with conditions
+Prop-Types --> Type Checking
+jest and Enzyme --> For components testing (snapshot testing includes)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Main Routes Or Pages
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+All the pages are rendered statically and data is loaded by making query to mysql with getStaticProps async function provided by next.js. For the Dynamic route, getStaticPaths function is used to recieve all the products data and make routes according to id's.
 
-## Learn More
+'/' --> Main Landing Page
+'/collection/women/clothes/' --> Display of clothes
+'/collection/women/accessories/' --> Display of accessories
+'/collection/men/clothes/' --> Display of clothes
+'/collection/men/accessories/' --> Display of accessories
+'/collection/kids/clothes/' --> Display of clothes
+'/products/[id]/ --> Dynamic Route for display of a selected item by its id
+'/accounts/orders/' --> Display of All orders made by authenticated and authorized user
+'/checkout/' --> For getting user details and checkout
 
-To learn more about Next.js, take a look at the following resources:
+## Seed Data
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Seed data is available to populate database with necessary data (items).
+Mysql is used, and to load the data, copy the project and from the terminal navigate to the root project folder, open mysql-cli and type the following query:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+'''mysql
+SOURCE seed_data/seed.sql;
+'''
 
-## Deploy on Vercel
+seed.sql will create a new database named 'shopshop', select it and create new tables named 'Products', 'Categories', 'Orders', 'Customers' and 'Order_details'. The 'seed.js' is node-mysql integration file and will transfer all the data in 'data.json' to mysql database. Open seed.js in CodeEditor and change all the values for database connection.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To populate the tables, close mysql-cli and enter following commad:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+'''javascript
+npm run seed
+'''
+
+## Browsers support
+
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari-ios/safari-ios_48x48.png" alt="iOS Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>iOS Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/samsung-internet/samsung-internet_48x48.png" alt="Samsung" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Samsung | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Opera |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| last 2 versions                                                                                                                                                                                                   | last 2 versions                                                                                                                                                                                               | last 2 versions                                                                                                                                                                                               | last 2 versions                                                                                                                                                                                                               | last 2 versions                                                                                                                                                                                                                     | last 2 versions                                                                                                                                                                                           |

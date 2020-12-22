@@ -19,8 +19,8 @@ function Cart({ show, close }) {
     const timeout = setTimeout(() => {
       setDisplay(true);
       return () => clearTimeout(timeout);
-    });
-  }, 700);
+    }, 500);
+  }, []);
 
   const [{ basket }] = useStateValue();
 

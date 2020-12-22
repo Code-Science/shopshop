@@ -73,7 +73,7 @@ const CheckoutForm = () => {
                 type: 'EMPTY_BASKET',
               });
 
-              router.replace('/');
+              router.replace('/checkout/complete');
             }
           });
       } else {
@@ -138,7 +138,7 @@ const CheckoutForm = () => {
       <CardElement options={cardOptions} onChange={handleChange} />
 
       <button
-        type="button"
+        type="submit"
         className={styles.checkoutBtn}
         disabled={processing || disabled || succeeded}
       >

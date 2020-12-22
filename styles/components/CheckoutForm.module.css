@@ -77,6 +77,12 @@
   padding-bottom: 1rem;
 }
 
+.purchaseComplete {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 30vh;
+}
+
 @media (min-width: 500px) {
   .stripeForm {
     padding: 40px 100px;

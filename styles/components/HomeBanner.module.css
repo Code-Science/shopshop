@@ -43,6 +43,7 @@
   padding: 0rem 3rem;
   line-height: 4.5rem;
   opacity: 0;
+  visibility: hidden;
   animation: textAnimation 50s linear infinite;
 }
 
@@ -111,13 +112,14 @@
 
 @keyframes textAnimation {
   0% {
+    visibility: visible;
     opacity: 0;
     transform: translateY(-10%);
   }
   3% {
     transform: translateY(0%);
-
     opacity: 1;
+    visibility: visible;
   }
   18% {
     opacity: 1;
@@ -126,9 +128,11 @@
   20% {
     opacity: 0;
     transform: translateY(-10%);
+    visibility: hidden;
   }
   30% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 

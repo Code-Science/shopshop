@@ -5,7 +5,7 @@ import OrderSummary from '../../components/OrderSummary';
 import styles from '../../styles/components/CheckoutForm.module.css';
 
 const CheckoutPage = () => {
-  const stripePromise = loadStripe(process.env.STRIPE_SECRET_PUBLIC_KEY);
+  const stripePromise = loadStripe(`${process.env.stripePublicKey}`);
   return (
     <div className={styles.checkout}>
       checkout
