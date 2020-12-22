@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
@@ -8,10 +8,19 @@ import styles from '../styles/components/Cart.module.css';
 import { useStateValue } from '../store/StateProvider';
 
 function Cart({ show, close }) {
+  const [cartDisplay, setDisplay] = useState(false);
   const cartClass = classNames({
     [styles.cart]: true,
     [styles.show]: show,
+    [styles.cartDisplay]: cartDisplay,
   });
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setDisplay(true);
+      return () => clearTimeout(timeout);
+    });
+  }, 700);
 
   const [{ basket }] = useStateValue();
 
