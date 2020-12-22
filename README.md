@@ -20,6 +20,7 @@ jest and Enzyme --> For components testing (snapshot testing includes)
 
 All the pages are rendered statically and data is loaded by making query to mysql with getStaticProps async function provided by next.js. For the Dynamic route, getStaticPaths function is used to recieve all the products data and make routes according to id's.
 
+```javascript
 '/' --> Main Landing Page
 '/collection/women/clothes/' --> Display of clothes
 '/collection/women/accessories/' --> Display of accessories
@@ -29,23 +30,24 @@ All the pages are rendered statically and data is loaded by making query to mysq
 '/products/[id]/ --> Dynamic Route for display of a selected item by its id
 '/accounts/orders/' --> Display of All orders made by authenticated and authorized user
 '/checkout/' --> For getting user details and checkout
+```
 
 ## Seed Data
 
 Seed data is available to populate database with necessary data (items).
 Mysql is used, and to load the data, copy the project and from the terminal navigate to the root project folder, open mysql-cli and type the following query:
 
-'''mysql
+```mysql
 SOURCE seed_data/seed.sql;
-'''
+```
 
 seed.sql will create a new database named 'shopshop', select it and create new tables named 'Products', 'Categories', 'Orders', 'Customers' and 'Order_details'. The 'seed.js' is node-mysql integration file and will transfer all the data in 'data.json' to mysql database. Open seed.js in CodeEditor and change all the values for database connection.
 
 To populate the tables, close mysql-cli and enter following commad:
 
-'''javascript
+```javascript
 npm run seed
-'''
+```
 
 ## Browsers support
 
